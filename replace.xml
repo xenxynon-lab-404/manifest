@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<manifest>
   <remote  name="ArrowOS"
            fetch="https://github.com/ArrowOS" />
   <remote  name="LOS"
@@ -20,3 +20,5 @@
  <!-- device settings -->
  
     <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LOS" revision="lineage-19.1" />
+
+</manifest>

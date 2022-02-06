@@ -11,3 +11,5 @@
 <!-- device settings -->
 
   <remove-project="android_packages_resources_devicesettings" /> 
+
+</manifest>
