@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <remote name="xenxynon"
+                fetch="https://github.com/xenxynon" />
+        <remote name="stormbreaker-project" 
+                fetch="https://github.com/LineageOS" />        
+
+<!-- device trees -->
+
+        <project path="device/xiaomi/lavender" name="device_xiaomi/lavender" remote="xenxynon" revision="12" clone-depth="1" />
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote=xenxynon" revision="12" clone-depth="1" />
+
+<!-- kernel -->
+        
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="stormbreaker-project" revision="qti-oldcam-eas" />
+
+<manifest>
