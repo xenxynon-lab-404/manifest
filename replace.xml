@@ -5,8 +5,6 @@
   <remote  name="LOS"
            fetch="https://github.com/LineageOS" />
 
-
-
 <!-- HALs -->
 
    <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom_audio" remote="ArrowOS" revision="arrow-12.0-caf-msm8998" />
@@ -19,6 +17,6 @@
  
  <!-- device settings -->
  
-    <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LOS" revision="lineage-19.1" />
+   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LOS" revision="lineage-19.1" />
 
 </manifest>
