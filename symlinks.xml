@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="styx"
+           revision="S"
+           fetch="https://github.com/StyxProject" />
+
+  <!-- CodeAurora additions -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="styx">
+    <!-- add guards for CAF repositories -->
+     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+
