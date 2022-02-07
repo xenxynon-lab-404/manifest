@@ -5,9 +5,9 @@
            revision="S"
            fetch="https://github.com/StyxProject" />
 
-  <!-- CodeAurora additions -->
+  <!-- CodeAurora additions
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="styx">
-    <!-- add guards for CAF repositories -->
+    add guards for CAF repositories -->
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
   </project>
