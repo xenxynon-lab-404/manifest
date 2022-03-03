@@ -16,7 +16,7 @@
 
  <!-- legacy stuff -->
 
- <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library remote="LOS" revision="lineag e-19.0 />"
+ <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library remote="LOS" revision="lineage-19.0" />
 
  <!-- device settings -->
  
