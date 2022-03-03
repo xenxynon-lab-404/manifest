@@ -8,6 +8,8 @@
            fetch="https://gitlab.com/potatodevices" />        
 
 
- <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library remote="LOS" revision="lineage-19.0" />
+ <remove-project name="vendor_aosp" />
+ <project path="vendor/aosp" name="vendor_aosp" remote="xenxynon" revision="twelve" />
+ <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="LOS" revision="lineage-19.0" />
 
 </manifest>
