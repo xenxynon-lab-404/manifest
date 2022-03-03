@@ -20,11 +20,9 @@
 
  <!-- device settings -->
  
-   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LOS" revision="lineage-19.0" />
+<!--   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LOS" revision="lineage-19.0" />
 
 <!-- GMS REPO -->
-   <project path="vendor/google/gms" name="vendor_google_gms" remote="posp" revision="frico-release" />
-
--->
+   <project path="vendor/google/gms" name="vendor_google_gms" remote="posp" revision="frico-release" /> --> 
 
 </manifest>
