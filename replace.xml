@@ -15,10 +15,9 @@
    <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-12.0-caf-msm8998" /> -->
 
  <!-- legacy stuff -->
- 
-   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="styx" />
-<!--   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library remote="LOS" revision="lineag e-19.0 />" />
--->
+
+ <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library remote="LOS" revision="lineag e-19.0 />"
+
  <!-- device settings -->
  
    <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LOS" revision="lineage-19.0" />
@@ -26,6 +25,6 @@
 <!-- GMS REPO -->
    <project path="vendor/google/gms" name="vendor_google_gms" remote="posp" revision="frico-release" />
 
-
+-->
 
 </manifest>
