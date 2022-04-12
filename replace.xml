@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="ArrowOS"
-           fetch="https://github.com/ArrowOS" />
-  <remote  name="LOS"
-           fetch="https://github.com/LineageOS" />
-  <remote name="posp" 
-           fetch="https://gitlab.com/potatodevices" />        
-
 
  <remove-project name="vendor_aosp" />
- <project path="vendor/aosp" name="vendor_aosp" remote="xenxynon" revision="twelve" />
- <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="LOS" revision="lineage-19.0" />
+ <project path="vendor/aosp" name="vendor_aosp" remote="XS" revision="twelve-plus" />
 
 </manifest>
