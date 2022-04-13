@@ -15,6 +15,6 @@
 
 <!-- kernel -->
         
-        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="prpr" revision="qti-oldcam-eas" clone-depth="1" />
+        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="prpr" revision="eas-caf" clone-depth="1" />
 
 </manifest>
