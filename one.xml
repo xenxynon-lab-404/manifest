@@ -10,11 +10,14 @@
 
 <!-- device trees -->
 
-        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-p" remote="XS" revision="aosp" />
-        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender-p" remote="XS" revision="12" />
+        <project path="device/xiaomi/lavender" name="backup_lavender-dt" remote="xenxynon" revision="scv" />
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="xenxynon" revision="A12" />
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="A12" />
+
+
 
 <!-- kernel -->
         
-        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="prpr" revision="eas-caf" clone-depth="1" />
+        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-pred" remote="XS" revision="A12" clone-depth="1" />
 
 </manifest>
