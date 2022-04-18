@@ -7,14 +7,19 @@
                 fetch="https://github.com/XenStuff" />
         <remote name="prpr"
                 fetch="https://github.com/ImPrashantt" />
+        <remote name="pixel"
+                fetch="https://github.com/PixelExperience"
+                revision="twelve"
+                review="gerrit.pixelexperience.org" />
 
 <!-- device trees -->
 
         <project path="device/xiaomi/lavender" name="backup_lavender-dt" remote="xenxynon" revision="scv" />
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="xenxynon" revision="A12" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="A12" />
-
-
+        <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="pixel" />
+        <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="pixel" />
+        <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="pixel" />
 
 <!-- kernel -->
         
