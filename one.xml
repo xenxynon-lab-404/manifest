@@ -23,6 +23,6 @@
 
 <!-- kernel -->
         
-        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-pred" remote="XS" revision="A12" clone-depth="1" />
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender-pred" remote="XS" revision="A12" clone-depth="1" />
 
 </manifest>
