@@ -15,8 +15,6 @@
                 fetch="https://github.com/ArrowOS"
                 review="https://review.arrowos.net/"
 
-<!-- device trees -->
-
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="xenxynon" revision="sc-v2" />
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="xenxynon" revision="A12" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="A12" />
