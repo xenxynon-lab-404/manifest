@@ -13,7 +13,7 @@
                 review="gerrit.pixelexperience.org" />
         <remote name="arrow"
                 fetch="https://github.com/ArrowOS"
-                review="https://review.arrowos.net/">
+                review="https://review.arrowos.net" />
 
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="xenxynon" revision="sc-v2" />
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="xenxynon" revision="A12" />
