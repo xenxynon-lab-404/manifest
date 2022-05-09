@@ -22,4 +22,17 @@
         <!-- kernel -->      
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="xenxynon" revision="qti-oldcam-eas" clone-depth="1" />
 
+  <remove-project name="android_build" />
+  <project path="build/make" name="android_build" remote="xenxynon" caf="platform/build_repo" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+
+
 </manifest>
