@@ -10,7 +10,8 @@
         <!-- Trees -->
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="XS" revision="shinka" />
         <project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="XS" revision="shinka" />
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="XS" revision="arrow" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="XS" revision="shinka" />
+        <project path="vendor/xiaomi/sdm660-common" name="android_vendor_xiaomi_sdm660-common" remote="XS" revision="shinka" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="A12" />
 
         <!-- hals -->
