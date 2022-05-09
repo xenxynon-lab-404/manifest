@@ -18,8 +18,7 @@
         <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="xenxynon" revision="sc" />
         <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="xenxynon" revision="sc" />
 
-<!-- kernel -->
-        
+        <!-- kernel -->      
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="xenxynon" revision="qti-oldcam-eas" clone-depth="1" />
 
 </manifest>
