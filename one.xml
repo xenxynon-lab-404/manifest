@@ -5,25 +5,21 @@
                 fetch="https://github.com/xenxynon" />
         <remote name="XS"
                 fetch="https://github.com/XenStuff" />
-        <remote name="prpr"
-                fetch="https://github.com/ImPrashantt" />
-        <remote name="pixel"
-                fetch="https://github.com/PixelExperience"
-                revision="twelve"
-                review="gerrit.pixelexperience.org" />
-        <remote name="arrow"
-                fetch="https://github.com/ArrowOS"
-                review="https://review.arrowos.net" />
 
-        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="xenxynon" revision="sc-v2" />
-        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="xenxynon" revision="A12" />
+
+        <!-- Trees -->
+        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="XS" revision="shinka" />
+        <project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="XS" revision="shinka" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="XS" revision="arrow" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="A12" />
-        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-        <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="arrow" revision="arrow-12.0-caf-msm8998" />
+
+        <!-- hals -->
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="xenxynon" revision="sc" />
+        <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="xenxynon" revision="sc" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="xenxynon" revision="sc" />
 
 <!-- kernel -->
         
-        <project path="kernel/xiaomi/lavender" name="AOSP-Krypton/kernel_xiaomi_lavender" remote="github" revision="A12" clone-depth="1" />
+        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="xenxynon" revision="qti-oldcam-eas" clone-depth="1" />
 
 </manifest>
