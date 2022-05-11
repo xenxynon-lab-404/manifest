@@ -37,9 +37,7 @@
        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
 
 
-        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
-        <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="xenxynon" revision="caf-12" >
-          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-  </project>
+        <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+        <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="xenxynon" revision="caf-12" />
 
 </manifest>
