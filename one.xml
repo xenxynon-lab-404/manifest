@@ -16,7 +16,7 @@
 
         <!-- hals -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="xenxynon" revision="sc" />
-        <project path="hardware/qcom/display" name="android_hardware_qcom_display-1" remote="XS" revision="lineage-19.1-caf-msm8998" />
+        <project path="hardware/qcom/display" name="hardware_qcom-caf_msm8998_display" remote="XS" revision="twelve" />
         <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="xenxynon" revision="sc" />
 
         <!-- kernel -->      
