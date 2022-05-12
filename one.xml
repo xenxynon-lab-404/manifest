@@ -36,4 +36,10 @@
   </project>
        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
 
+  <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom-opensource_display-commonsys" remote="xenxynon" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+  </project>
+
+
 </manifest>
