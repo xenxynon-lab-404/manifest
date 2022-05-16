@@ -23,23 +23,15 @@
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="xenxynon" revision="qti-oldcam-eas" clone-depth="1" />
 
 
-
-       <remove-project name="android_build" />
-       <project path="build/make" name="android_build" remote="xenxynon" revision="shinka" caf="platform/build_repo" >
-         <copyfile src="core/root.mk" dest="Makefile" />
-         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-         <linkfile src="core" dest="build/core" />
-         <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-         <linkfile src="target" dest="build/target" />
-         <linkfile src="tools" dest="build/tools" />
-  </project>
+       <remove-project name="proprietary_vendor_gms" />
+       <remove-project name="android_vendor_overlays_404" />
+       <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="XS" revision="shinka" />
+       <project path="vendor/gms" name="xenxynon/proprietary_vendor_gms" remote="gitlab" revision="shinka" />
        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
-
-  <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="xenxynon" revision="shinka" >
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-  </project>
+       <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
+       <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="xenxynon" revision="shinka" >
+       <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+       </project>
 
 
 </manifest>
