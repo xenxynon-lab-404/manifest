@@ -24,6 +24,7 @@
         <!-- kernel -->      
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="lab" clone-depth="1" />
 
+       <project path="vendor/lawnchair" name="vendor_lawnchair" remote="lab" />
 
        <remove-project name="android_vendor_overlays_404" />
        <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="lab" />
