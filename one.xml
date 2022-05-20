@@ -9,6 +9,12 @@
                 fetch="https://github.com/xenxynon-lab-404"
                 revision="refs/heads/shinka" />
 
+<remote  name="clang"   fetch="https://github.com/kdrag0n" />
+ 
+
+<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
+
+
         <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="lab" />
         <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="lab"/>
