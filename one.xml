@@ -28,6 +28,7 @@
 
        <remove-project name="android_vendor_overlays_404" />
        <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="lab" />
+       <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="XS" revision="shinka" />
        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
        <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
