@@ -6,32 +6,31 @@
         <remote name="XS"
                 fetch="https://github.com/XenStuff" />
         <remote name="lab"
-                fetch="https://gitlab.com/xenxynon" />
+                fetch="https://github.com/xenxynon-lab-404"
+                revision="shinka />
 
 
         <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender-1" remote="XS" revision="shinka" />
-        <project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="XS" revision="shinka" />
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="XS" revision="shinka" />
-        <project path="vendor/xiaomi/sdm660-common" name="android_vendor_xiaomi_sdm660-common" remote="XS" revision="shinka" />
-        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="xenxynon" revision="A12" />
+        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="lab" />
+        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="lab"/>
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
+        <project path="vendor/xiaomi/sdm660-common" name="vndor_xiaomi_sdm660-common" remote="lab"/>
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
 
         <!-- hals -->
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="xenxynon" revision="sc" />
-        <project path="hardware/qcom/display" name="hardware_qcom-caf_msm8998_display" remote="XS" revision="shinka" />
-        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="xenxynon" revision="sc" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
+        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="lab" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lab" />
 
         <!-- kernel -->      
-        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="xenxynon" revision="qti-oldcam-eas" clone-depth="1" />
+        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="lab" clone-depth="1" />
 
 
-       <remove-project name="proprietary_vendor_gms" />
        <remove-project name="android_vendor_overlays_404" />
-       <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="XS" revision="shinka" />
-       <project path="vendor/gms" name="proprietary_vendor_gms" remote="lab" revision="shinka" />
+       <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="lab" />
        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
-       <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="xenxynon" revision="shinka" >
+       <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
        <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
        </project>
 
