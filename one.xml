@@ -7,7 +7,7 @@
                 fetch="https://github.com/XenStuff" />
         <remote name="lab"
                 fetch="https://github.com/xenxynon-lab-404" />
-
+                revision="refs/heads/shinka" />
 
         <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="lab" />
