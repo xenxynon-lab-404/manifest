@@ -16,8 +16,8 @@
 
 
         <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="lab" />
-        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="lab"/>
+        <project path="device/xiaomi/mi439" name="android_device_xiaomi_mi439" remote="XS" revision="lineage-19.1"/>
+        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="XS" revision="12-R-CAF"/>
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="lab"/>
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
@@ -29,19 +29,8 @@
 
         <!-- kernel -->      
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="lab" clone-depth="1" />
+        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
 
-       <project path="vendor/lawnchair" name="vendor_lawnchair" remote="lab" />
-
-       <remove-project name="android_vendor_overlays_404" />
-       <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="lab" />
-       <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
-       <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
-       <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
-       <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-       </project>
-
-       <remove-project name="android_vendor_404" />
-       <project path="vendor/404" name="android_vendor_404" remote="lab" />
 
 
 </manifest>
