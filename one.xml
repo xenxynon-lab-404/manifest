@@ -11,26 +11,27 @@
         <remote name="chuck"
                 fetch="https://github.com/xenxynon-lab-404"/>
         <remote name="mi439"
-                fetch="https://github.com/mi-sdm439"
-
-<remote  name="clang"   fetch="https://github.com/kdrag0n" />
+                fetch="https://github.com/mi-sdm439" />
+        <remote name="clang"
+                fetch="https://github.com/kdrag0n" />
  
 
-<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
 
 
         <!-- Trees -->
         <project path="device/xiaomi/mi439" name="device_xiaomi_mi439" remote="XS" revision="lineage-19.1"/>
         <project path="device/xiaomi/sdm439-common" name="device_xiaomi_sdm660-common" remote="XS" revision="12-R-CAF"/>
         <project path="vendor/xiaomi/mi439" name="proprietary_vendor_xiaomi_mi439" remote="mi439" revision="lineage-19.1"/>
-        <project path="vendor/xiaomi/sdm439-common" name="vendor_xiaomi_sdm439-common" remote="chuck" revision="12-R-CAF"/>
+        <project path="vendor/xiaomi/sdm439-common" name="vendor_xiaomi_sdm439-common" remote="mi439" revision="12-R-CAF"/>
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
 
         <!-- hals --> 
-        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="chuck" />
-        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="chuck" />
-        <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="chuck" />
-        <!-- kernel -->      
+        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="XS" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="XS" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="XS" />
+
+        <!-- kernel -->
         <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi439" clone-depth="1" />
         
 
