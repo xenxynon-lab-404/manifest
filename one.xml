@@ -40,5 +40,8 @@
        <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
        </project>
 
+       <remove-project name="android_vendor_404" />
+       <project path="vendor/404" name="android_vendor_404" remote="lab" />
+
 
 </manifest>
