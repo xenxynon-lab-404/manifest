@@ -3,15 +3,20 @@
 
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
+
         <remote name="XS"
                 fetch="https://github.com/XenStuff" />
+
         <remote name="lab"
                 fetch="https://github.com/xenxynon-lab-404"
                 revision="refs/heads/shinka" />
+
         <remote name="chuck"
                 fetch="https://github.com/ChuckProjekt"/>
+
         <remote name="mi439"
                 fetch="https://github.com/mi-sdm439" />
+
         <remote name="clang"
                 fetch="https://github.com/kdrag0n" />
  
