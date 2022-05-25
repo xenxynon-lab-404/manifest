@@ -39,7 +39,7 @@
 
 
         <!-- kernel -->
-        <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi439" clone-depth="1" />
+        <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi439" revision="a12/main" clone-depth="1" />
         
 
 </manifest>
