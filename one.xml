@@ -41,7 +41,7 @@
         <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
         </project>
        <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
-
+       <remove-project name="platform/vendor/qcom-opensource/usb" />
 
         <!-- kernel -->
         <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi439" revision="a12/main" clone-depth="1" />
