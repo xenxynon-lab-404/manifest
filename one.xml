@@ -40,7 +40,7 @@
         <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
         <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
         </project>
-
+       <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
 
 
         <!-- kernel -->
