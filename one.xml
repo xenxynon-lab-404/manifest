@@ -22,19 +22,15 @@
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="lab"/>
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
+        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="lab" revision="banger" clone-depth="1" />
 
         <!-- hals -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
         <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lab" />
         <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lab" />
 
-        <!-- kernel -->
-        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="lab" revision="banger" clone-depth="1" />
-
-        <!-- DeviceSettings -->
-        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
-
         <!-- extras -->
+        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
         <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
         <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
         <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
@@ -42,7 +38,9 @@
         <remove-project name="android_bionic" />
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
-        <project path="vendor/404" name="android_vendor_404" remote="lab" />
+        <project path="vendor/404" name="android_vendor_404" remote="lab" >
+          <linkfile src="build.sh" dest="rom-build.sh" />
+        </project>
         <remove-project name="platform/vendor/qcom-opensource/usb" />
         <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
         <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
