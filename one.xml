@@ -22,7 +22,7 @@
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="lab"/>
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
-        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="lab" clone-depth="1" />
+        <project path="kernel/xiaomi/sdm660" name="projects-nexus/nexus_kernel_xiaomi_lavender" remote="github" revision="a12-qti" clone-depth="1" />
 
         <!-- hals -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
