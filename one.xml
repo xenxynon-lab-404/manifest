@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+        <remote name="cl-404lab"
+                fetch="https://github.com/p404-vayu" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="XS"
@@ -47,4 +49,17 @@
         <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
         <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
         </project>
+
+
+        <remove-project name="android_packages_apps_404Launcher" />
+        <remove-project name="android_frameworks_base" />
+        <remove-project name="android_packages_apps_Settings" />
+        <remove-project name="android_frameworks_av" />
+        <project path="packages/apps/Launcher3" name="android_packages_apps_404Launcher" remote="cl-404lab" revision="shinka" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cl-404lab" revision="shinka" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="cl-404lab" revision="shinka" />
+        <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cl-404lab" revision="arrow-12.1" />
+        <project path="frameworks/av" name="android_frameworks_av" remote="cl-404lab" revision="shinka" />
+
+
 </manifest>
