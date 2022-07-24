@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-        <remote name="cl-404lab"
-                fetch="https://github.com/p404-vayu" />
+        <remote name="Flamingo-lavender"
+                fetch="https://github.com/Flamingo-lavender"
+                revision="refs/heads/A12.1" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="XS"
@@ -20,7 +20,7 @@
         <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" revision="fixup" remote="lab"/>
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="lab"/>
-        <project path="kernel/xiaomi/sdm660" name="nexus_kernel_xiaomi_lavender-1" remote="lab" clone-depth="1" />
+        <project path="kernel/xiaomi/sdm660" name="msm-4.4" remote="Flamingo-lavender" />
 
         <!-- hals -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
