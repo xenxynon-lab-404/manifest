@@ -30,8 +30,8 @@
         <!-- extras -->
         <remove-project name="android_packages_apps_Updater" />
         <project path="packages/resources/Updater" name="android_packages_apps_Updater" remote="lab" />
-        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
-        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
+<!--        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
+-->        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
         <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
         <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
         </project>
