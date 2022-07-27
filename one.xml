@@ -38,7 +38,7 @@
         <remove-project name="android_bionic" />
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
-        <project path="vendor/404" name="android_vendor_404" remote="lab" >
+        <project path="vendor/404" name="android_vendor_404" revision="lab" remote="lab" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <remove-project name="android_frameworks_base" />
