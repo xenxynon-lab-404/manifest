@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="Flamingo-lavender"
-                fetch="https://github.com/Flamingo-lavender"
-                revision="refs/heads/A12.1" />
+        <remote name="xlavender"
+                fetch="https://github.com/JustAnotherXenORG"
+                revision="refs/heads/tokui" />
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="XS"
@@ -10,22 +10,21 @@
         <remote name="lab"
                 fetch="https://github.com/xenxynon-lab-404"
                 revision="refs/heads/shinka" />
+        <remote name="usif"
+                fetch="https://github.com/sdm660-dev"
+                revision="refs/heads/12-caf_4.19" />
 
-        <!-- Custom Clang -->
-        <remote  name="clang"
-                 fetch="https://github.com/kdrag0n" />
- 
         <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="lab" />
-        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="lab"/>
-        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
-        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="lab"/>
-        <project path="kernel/xiaomi/sdm660" name="msm-4.4" remote="Flamingo-lavender" revision="no-headers" />
+        <project path="device/xiaomi/lavender" name="lavender" revision="shinka" remote="xlavender" />
+        <project path="device/xiaomi/sdm660-common" name="sdm660" revision="tokui" remote="xlavender" />
+        <project path="vendor/xiaomi/lavender" name="pix106/android_vendor_xiaomi_lavender" remote="github" />
+        <project path="vendor/xiaomi/sdm660-common" name="lavender-vendor" revision="common" remote="xlavender" />
+        <project path="kernel/xiaomi/sdm660" name="android_kernel_xiaomi_southwest-4.19" revision="main" remote="xenxynon" />
 
         <!-- hals -->
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
-        <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lab" />
-        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lab" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="usif" />
+        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="usif" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="usif" />
 
         <!-- extras -->
         <remove-project name="android_packages_apps_ThemePicker" />
@@ -37,12 +36,6 @@
         <remove-project name="android_packages_apps_Updater" />
         <project path="packages/resources/Updater" name="android_packages_apps_Updater" remote="lab" />
         <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
-        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
-        <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
-        <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-        </project>
-        <remove-project name="android_bionic" />
-        <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
         <project path="vendor/404" name="android_vendor_404" remote="lab" >
           <linkfile src="build.sh" dest="rom-build.sh" />
