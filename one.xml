@@ -17,7 +17,7 @@
         <!-- Trees -->
         <project path="device/xiaomi/lavender" name="lavender" revision="shinka" remote="xlavender" />
         <project path="device/xiaomi/sdm660-common" name="sdm660" revision="tokui" remote="xlavender" />
-        <project path="vendor/xiaomi/lavender" name="pix106/android_vendor_xiaomi_lavender" remote="github" />
+        <project path="vendor/xiaomi/lavender" name="pix106/android_vendor_xiaomi_lavender" revision="12-4.19" remote="github" />
         <project path="vendor/xiaomi/sdm660-common" name="lavender-vendor" revision="common" remote="xlavender" />
         <project path="kernel/xiaomi/sdm660" name="android_kernel_xiaomi_southwest-4.19" revision="main" remote="xenxynon" />
 
