@@ -12,8 +12,8 @@
                 revision="refs/heads/shinka" />
 
         <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="lab" />
-        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="lab"/>
+        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" revision="tokui-4.4" remote="lab" />
+        <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" revision="tokui-4.4" remote="lab"/>
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="lab"/>
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="lab"/>
         <project path="kernel/xiaomi/sdm660" name="projects-nexus/nexus_kernel_xiaomi_lavender" remote="github" revision="a12" />
